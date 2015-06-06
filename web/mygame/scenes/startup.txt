@@ -1,0 +1,170 @@
+*title Dust 514 - Ascension
+*author Aeon Amadi
+
+*scene_list
+	startup
+
+*create name ""
+*create strength 10
+*create dexterity 10
+*create constitution 10
+*create intelligence 10
+*create wisdom 10
+*create charisma 10
+*create leadership 10
+*create durability 0
+*create precision 0
+*create EWAR 0
+*create mobility 0
+*create health 0
+*create reputation 10
+*create PK 1000
+*create ISK 0
+
+*label Race
+New Eden is a vast an expansive galaxy with different cultures. The four main faction inhabit this galaxy: the Amarr, Caldari, Gallente, and Minmatar. All of these races are human, descendants of Terrans (Earth's inhabitants) who colonized the galaxy thousands of years ago through a natural wormhole.
+
+In Dust 514: Ascension, you choose your race and bloodline to determine a different story as a general infantryman belonging to the race's factional armies. While the twelve bloodlines may share similarities in experiences, none are the same.
+
+Which one are you?
+*choice
+	#Amarr
+		*goto alpha
+	#Caldari
+		*goto alpha
+	#Gallente
+		*goto Gallente 
+	#Minmatar
+		*goto alpha
+
+*label alpha
+The game is currently in alpha testing and this race or bloodline currently isn't available. Please select from one of the currently available options:
+*choice
+	#Gallente
+		*goto Gallente
+
+*label Gallente
+The Gallenteans, self-rigehteous, meddling, pompous and tiresome, or virile liberalists and defenders of the free world. Love them or hate them, you simply can't ignore them. Everybody has an opinion on the Gallente Federation, it all depends from which side of the table you view them.
+*choice
+	#Gallente
+		*goto drillsergeant
+	#Intaki
+		*goto alpha
+	#Jin-Mei
+		*goto alpha
+
+*label drillsergeant
+You wake up to a loud metallic banging followed by an equally booming horn, staring blearily at the plastic panel of the bunk bed above you. You're unable to get your bearings in time before a man begins screaming in your ear.
+
+"Wake up, scum! Get your ass out of my bed before I turn you into the State Cuisine you've always dreamed of being! We do not allow beauty sleep in the Federal Marine Corps!"
+
+You roll out of bed, aching from the non-stop physical conditioning that has taken place over the course of several weeks. Your muscles feel as though they're about to give out at any moment and your shakiness is apparent, barely able to lift yourself to a stand before the drill sergeant begins to yell again.
+
+"What is wrong with you recruit?! CAn you not handle the intensity of being a Federal Marine?! You must be a Caldari Spy, because any green-bleeding, free citizen of New Eden would do better than you right now!"
+
+The man's breath smells faintly of mint but through your morning grogginess the smell is both overpowering and nauseating. The more he yells in your face, the worse it becomes. You feel a deep-seated sloshing sensation in your stomach. Your mouth begins to hyper-salivate and the urge to lean forward is unbearable as saliva pours from your mouth like a faucet. Soon enough you eject last night's meal onto the floor in a sickening display. Your peers scatter like cockroaches exposed to light.
+
+The drill sergeant reaches his hand out and grips your neck, pulling you back from your own vomiting session. The scorn in his eyes is undeniable, as if his job as a drill sergeant wasn't the source of his apparent rage any longer.
+
+"What is your name, recruit..?" He says, with murmured hatred.
+*input_text name
+*goto consequence
+
+*label consequence
+"And why, Recruit ${name}, did you decide to spill your guts on my beautiful, polished flooring instead of going to the showers?! Do you even know what showers are or did you forget those in PT as well?! Just what in the hell is the matter with you, Recruit ${name}?!"
+*choice
+	#I'm sorry, Sergeant! I'm sick from all the training!
+		"Get your ass up and clean up this abomination, Recruit!"
+
+		You glance down at the newly made puddle of your stomach contents and, on closer inspection, you can see bits of bread in the off-color pool.
+
+		It takes about half an hour and your peers have already funneled out of the barracks to eat breakfast. You manage to clean up the puke and bile off the rubberized concrete floor after a thorough and vigorous mopping. The remaining water shines in the morning light in a blinding display as beams from the system's star peer through the translucent polyprop panels in the barracks wall.
+
+		You move to rejoin your academy group, if begrudgingly and sore, and are immediately greeted by your drill sergeant in the corridor leading to the cafeteria.
+
+		"Well, well. Look who finally decided to join us... Breakfast is over, Recruit!" 
+
+		You have a feeling that the rest of the day is going to be miserable without any energy.
+
+		*set constitution %-10
+		*page_break
+		*goto basic
+	#Remain silent
+		"Get your ass up and clean up this abomination, Recruit!"
+
+		You glance down at the newly made puddle of your stomach contents and, on closer inspection, you can see bits of bread in the off-color pool.
+
+		It takes about half an hour and your peers have already funneled out of the barracks to eat breakfast. You manage to clean up the puke and bile off the rubberized concrete floor after a thorough and vigorous mopping. The remaining water shines in the morning light in a blinding display as beams from the system's star peer through the translucent polyprop panels in the barracks wall.
+
+		You move to rejoin your academy group, if begrudgingly and sore, and are immediately greeted by your drill sergeant in the corridor leading to the cafeteria.
+
+		"Well, well. Look who finally decided to join us... Breakfast is over, Recruit!" 
+
+		You have a feeling that the rest of the day is going to be miserable without any energy.
+
+		*set constitution %-10
+		*page_break
+		*goto basic
+	#The Sergeant's breath smells like Caldari aftershave, sir!
+		"Get your ass up and clean up this abomination, Recruit!"
+
+		You glance down at the newly made puddle of your stomach contents and, on closer inspection, you can see bits of bread in the off-color pool.
+
+		It takes about half an hour and your peers have already funneled out of the barracks to eat breakfast. You manage to clean up the puke and bile off the rubberized concrete floor after a thorough and vigorous mopping. The remaining water shines in the morning light in a blinding display as beams from the system's star peer through the translucent polyprop panels in the barracks wall.
+
+		You move to rejoin your academy group, if begrudgingly and sore, and are immediately greeted by your drill sergeant in the corridor leading to the cafeteria.
+
+		"Well, well. Look who finally decided to join us... Breakfast is over, Recruit!" 
+
+		You have a feeling that the rest of the day is going to be miserable without any energy.
+
+		*set constitution %-10
+		*page_break
+		*goto basic
+	#The Recruit is over-eager to kill, Sir!
+		"I like you, Recruit, so I'm going to let this one slide and make the janitor clean up my Bunk House. You, on the other hand, get to drop and give me fifty - and I want to see that nose touch that mess you made."
+
+		You give a heavy sigh but this alternative might be better off. At the very least, you don't have to clean up your own stomach contents. You drop down to the floor with your hands on eithe side of the greasy smear, staring down at it with regret before beginning your push-ups, making sure that the tip of your nose just barely touches the sickly tan to appease your personal slave driver.
+
+		The activity starts off well enough but each push-up makes your muscles ache and burn, already sore from weeks of physical training. By the twentieth, you're struggling. By the thirtieth, you're begging your body not to give up. By the fortieth, you're praying to whoever will listen and desperately holding your breath as your nose now dips fully into the disgusting pool of your own ejecta.
+
+		Finally you are done and you roll over onto your back, staring up at the ceiling while you catch your breath. The relief in your arms is more than welcomed. Your peers have begun to funnel out of the barracks and into the corridor leading to the cafeteria. You catch them occasionally glancing at you with the faintest of smiles, knowing that you've impressed at least some of them with your display.
+
+		"Hope you've learned something, killer! Get to the cafeteria or you're going to miss breakfast!"
+		*set constitution %+10
+		*set charisma %+10
+		*set reputation %+5
+		*page_break
+		*goto basic
+
+*label basic
+Once breakfast is over the entirety of your academy moves out to a set of bleachers over-looking the firing range. For the moment, your drill sergeant is busy preparing for the introductory phase of weapon's training and you have a moment to speak with your companions. You welcome the time, considering that it's spent sitting and relaxing your sore body.
+
+You glance to the person infront of you and realize that you studied with them before joining the Federal Marines. But who is it?
+*temp friend
+*choice
+	#Chasity, a woman I studied quantum physics with.
+		Chasity. You could tell just by her slim physique and long raven hair.
+		*set friend "Chasity"
+		*page_break
+		*goto greeting
+	#Auryell, a woman I studied theoretical geometry with.
+		Auryell. You could tell just by her athletic build and short chestnut hair.
+		*set friend "Auryell"
+		*page_break
+		*goto greeting
+	#Malkavian, a man I studied Rouvenour history with.
+		Malkavian. You could tell just by his copper hair and ectomorphic build.
+		*set friend "Malkavian"
+		*page_break
+		*goto greeting
+	#Durate, a man I studied holo-arts with.
+		Durante. You could tell just by his golden hair and thicker frame.
+		*set friend "Durante"
+		*page_break
+		*goto greeting
+
+*label greeting
+You say hello, reaching the end of the first alpha build
+*finish
+
